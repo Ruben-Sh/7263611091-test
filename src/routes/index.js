@@ -8,7 +8,7 @@ export const get = async (transaction) => {
     //for (let index = 0; index < 1; index++) {
     //  const addResp = await core.db.user.addUser({
     //    firstName: 'John', lastName: 'Doe', email: 'john@doe.com'
-    //    });  
+        });  
       if (!addResp) return IKAPI.IKBadRequestResponse('Could not create user!', ECS.Globals.ErrorCode_IncorrectBehaviour);  
     }
     //Fetch all user
