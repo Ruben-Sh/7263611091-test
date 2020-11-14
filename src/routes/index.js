@@ -5,7 +5,7 @@ export const get = async (transaction) => {
   //init authorization
   return await (new ECS.Core(transaction)).run(async (core) => {
     //Create some users
-    for (let index = 0; index < 5; index++) {
+    for (let index = 0; index < 1; index++) {
       const addResp = await core.db.user.addUser({
         firstName: 'John', lastName: 'Doe', email: 'john@doe.com'
         });  
