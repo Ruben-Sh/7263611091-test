@@ -12,7 +12,8 @@ export const get = async (transaction) => {
     //  if (!addResp) return IKAPI.IKBadRequestResponse('Could not create user!', ECS.Globals.ErrorCode_IncorrectBehaviour);  
     //}
     //Fetch all user
-    const resp = await core.db.user.findAllUsers();
+    const resp = null
+    //const resp = await core.db.user.findAllUsers();
     if (!resp) return IKAPI.IKBadRequestResponse('Users not found', ECS.Globals.ErrorCode_IncorrectBehaviour);
     //Succeed
     return new IKAPI.IKSuccessResponse({ users: resp });
